@@ -1,0 +1,33 @@
+
+:root{
+
+}
+
+
+/* Elements Fixed */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+}
+
+ul, li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* =================== Shared Class CSS ======================= */
+/* =================== Header CSS ======================= */
+/* =================== Main CSS ======================= */
+/* =================== Footer CSS ======================= */
+/* =================== Responsive CSS ======================= */
+
+/* Responsive for small Devices */
+/* Responsive for Mediam Devices */
+/* Responsive for large Devices */
