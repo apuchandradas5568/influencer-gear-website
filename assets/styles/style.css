@@ -122,12 +122,49 @@ header .banner_content h1 {
     line-height: 4rem;
 }
 
+header .banner_img {
+    background: url('../images/Circle\ design.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
 header .banner_img img{
     width: 90%;
 }
 
 
 /* =================== Main CSS ======================= */
+
+/* company logo sections */
+section.company_logos{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+    background: linear-gradient(to left, #fff, #efefef, #efefef, #fff);
+    border-width: 1px;
+    border-style: solid;
+    border-image: linear-gradient(to right, #fff, #b0b0b08f, #b0b0b085, #fff) 1;
+    flex-wrap: wrap;
+    text-align: center;
+}
+section.company_logos img{
+    margin: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* =================== Footer CSS ======================= */
 /* =================== Responsive CSS ======================= */
 
@@ -157,5 +194,5 @@ header .banner_img img{
 }
 /* Responsive for large Devices */
 @media screen and (min-width: 769px) and (max-width: 992px) {
-    
+
 }
