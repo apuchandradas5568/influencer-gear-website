@@ -235,7 +235,28 @@ section.company_logos img {
 }
 
 
-
+section.featured_products{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+section.featured_products img{
+    flex: 1;
+}
+section.featured_products .content{
+    flex: 1;
+}
+section.featured_products .content .sec_title{
+    color: var(--deep-blue);
+font-size: 1.5rem;
+font-weight: 700;
+line-height: 60px; 
+}
+section.featured_products .content .sec_dec{}
+section.featured_products .content .main_btn{
+    border-radius: 0;
+}
 
 
 
@@ -252,7 +273,7 @@ section.company_logos img {
         margin-bottom: 2rem;
     }
 
-    .banner {
+    .banner, section.featured_products {
         flex-direction: column-reverse;
     }
 
@@ -274,6 +295,14 @@ section.company_logos img {
 
     .collection_section .card_container {
         grid-template-columns: repeat(2, 1fr);
+    }
+    section.featured_products {
+        flex-direction: column-reverse;
+        /* align-items: center; */
+        /* justify-content: center; */
+    }
+    section.featured_products .content{
+        text-align: center;
     }
 }
 
