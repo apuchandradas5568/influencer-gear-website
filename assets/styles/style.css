@@ -235,32 +235,63 @@ section.company_logos img {
 }
 
 
-section.featured_products{
+section.featured_products {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 4rem;
 }
-section.featured_products img{
+
+section.featured_products img {
+    flex: .7;
+}
+
+section.featured_products .content {
     flex: 1;
 }
-section.featured_products .content{
-    flex: 1;
-}
-section.featured_products .content .sec_title{
+
+section.featured_products .content .sec_title {
     color: var(--deep-blue);
-font-size: 1.5rem;
-font-weight: 700;
-line-height: 60px; 
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 4rem;
 }
-section.featured_products .content .sec_dec{}
-section.featured_products .content .main_btn{
+
+section.featured_products .content .main_btn {
     border-radius: 0;
 }
 
-
-
 /* =================== Footer CSS ======================= */
+
+footer {
+    background: var(--deep-blue);
+    padding: 3rem 0;
+    text-align: center;
+    width: 100vw;
+}
+
+footer h2 {
+    color: var(--white-color);
+}
+
+footer p {
+    color: var(--white-color);
+
+}
+
+
+footer .icons .icon:hover svg {
+    transform: scale(.9);
+}
+
+footer .icons .icon svg {
+    margin: .5rem;
+}
+
+
+
+
+
 /* =================== Responsive CSS ======================= */
 
 /* Responsive for small Devices */
@@ -272,14 +303,28 @@ section.featured_products .content .main_btn{
     nav .nav_logo {
         margin-bottom: 2rem;
     }
+header nav .nav_links {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
 
-    .banner, section.featured_products {
+.banner .banner_img{
+    margin-bottom: 3rem;
+}
+
+    .banner,
+    section.featured_products {
         flex-direction: column-reverse;
     }
 
     header .banner_content {
         max-width: 100vw;
         text-align: center;
+    }
+
+    section.featured_products img {
+        width: 100%;
     }
 
     .collection_section .card_container {
@@ -296,15 +341,12 @@ section.featured_products .content .main_btn{
     .collection_section .card_container {
         grid-template-columns: repeat(2, 1fr);
     }
+
     section.featured_products {
         flex-direction: column-reverse;
-        /* align-items: center; */
-        /* justify-content: center; */
     }
-    section.featured_products .content{
+
+    section.featured_products .content {
         text-align: center;
     }
 }
-
-/* Responsive for large Devices */
-@media screen and (min-width: 769px) and (max-width: 992px) {}
